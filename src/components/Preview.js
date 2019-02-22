@@ -1,7 +1,9 @@
 import React from "react";
 
-const Preview = () => {
-  return <h1>This is the preview section</h1>;
-};
+class Preview extends React.Component {
+  render() {
+    return <div>{this.props.value}</div>;
+  }
+}
 
 export default Preview;

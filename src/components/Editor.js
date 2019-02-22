@@ -1,18 +1,19 @@
 import React from "react";
 
-const Editor = props => {
-  return (
-    <form>
+class Editor extends React.Component {
+  render() {
+    return (
       <textarea
         id="editor"
         name="textarea"
         type="text"
-        placeholder={props.placeholder}
-        value={props.value}
-        onChange={props.handleChange}
-      />
-    </form>
-  );
-};
+        value={this.props.value}
+        onChange={this.props.handleChange}
+      >
+        {this.props.placeholder}
+      </textarea>
+    );
+  }
+}
 
 export default Editor;
