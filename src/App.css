@@ -1,4 +1,32 @@
+.container {
+  max-width: 90%;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+#editor,
+#preview {
+  width: 100%;
+}
+
 textarea {
-  width: 75%;
-  height: 300px;
+  height: 80vh;
 }

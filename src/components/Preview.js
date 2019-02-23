@@ -7,7 +7,9 @@ class Preview extends React.Component {
     return { __html: rawMarkup };
   }
   render() {
-    return <div dangerouslySetInnerHTML={this.getMarkdownText()} />;
+    return (
+      <div id="preview" dangerouslySetInnerHTML={this.getMarkdownText()} />
+    );
   }
 }
 
