@@ -9,7 +9,7 @@ class App extends React.Component {
   };
 
   handleChange = event => {
-    this.setState({ enteredText: event.target.value });
+    this.setState({ value: event.target.value });
   };
 
   render() {
@@ -20,7 +20,7 @@ class App extends React.Component {
           handleChange={this.handleChange}
           placeholder={placeholder}
         />
-        <Preview />
+        <Preview value={this.state.value} />
       </div>
     );
   }
