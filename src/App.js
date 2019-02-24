@@ -1,15 +1,19 @@
 import React from "react";
 import Preview from "./components/Preview";
 import Editor from "./components/Editor";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import "./App.css";
 
 class App extends React.Component {
   state = {
     value: ""
   };
+
+  // This renders the page first, before you update the editor code.
+  componentDidMount() {
+    this.setState({
+      value: placeholder
+    });
+  }
 
   handleChange = event => {
     this.setState({ value: event.target.value });
@@ -19,14 +23,14 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col">
+          <div className="col-lg">
             <Editor
               enteredText={this.value}
               handleChange={this.handleChange}
               placeholder={placeholder}
             />
           </div>
-          <div className="col">
+          <div className="col-lg">
             <Preview value={this.state.value} />
           </div>
         </div>
