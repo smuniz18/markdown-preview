@@ -45,20 +45,32 @@ const placeholder = `# Welcome to the markdown previewer!
 
 
 What if I need more info on the Markup Language?
-Check out this resource (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet "Markup Cheet Sheet")
+Check out this resource [Markup Cheet Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 
 ### Let's talk about some general styling in markup!
 
-**Bold** - can be done by adding 2 astericks on each side of the word or words you want bold \`** **\`
+**Bold** - can be done by adding 2 asterisks on each side of the word or words you want bold \`** **\`
 
-**Images** - can be inserted using the markdown inline style, don't forget the alt text! ![Markdown Logo](public/Images/Markdown-mark.svg "Markdown Logo")
+**Images** - can be inserted using the markdown inline style, don't forget the alt text! ![Markdown Logo](https://cdn0.iconfinder.com/data/icons/octicons/1024/markdown-512.png)
 
 Next let's talk about **lists**. super easy to implement! You can number, you can create unordered lists. Whatever kind of list you want, you can do!
 
 1. Item number 1
 2. Item number 2
-..* Unordered list item
+  1. Sub Item 1
+  2. Sub Item 2
+* Unordered list item
+* Next unordered list item
+  * Sub list item
+
+**Block Quotes**   
+*   This is the first list item.
+*   Here's the second list item.
+
+    > A blockquote would look great below the second list item.
+
+*   And here's the third list item.
 
 Maybe you want to show a some **inline code**. You can do that by using \`<h3>Back Ticks</h3>\`
 
