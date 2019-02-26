@@ -1,5 +1,10 @@
+#root {
+  background-color: #659d9e;
+}
+
 .container {
   max-width: 90%;
+  padding: 3% 0;
 }
 
 h1 {
@@ -39,4 +44,19 @@ img {
 pre,
 code {
   background-color: #eeeeee;
+}
+
+#preview,
+#editor {
+  border: 1px solid black;
+  padding: 2%;
+  background-color: #fff;
+}
+
+.title {
+  border: 1px solid black;
+  padding: 2%;
+  margin-bottom: 0px;
+  background-color: #fff;
+  font-weight: bold;
 }

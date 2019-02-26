@@ -24,6 +24,7 @@ class App extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col-lg">
+            <h1 className="title">Editor Window</h1>
             <Editor
               enteredText={this.value}
               handleChange={this.handleChange}
@@ -31,6 +32,7 @@ class App extends React.Component {
             />
           </div>
           <div className="col-lg">
+            <h1 className="title">Preview Window</h1>
             <Preview value={this.state.value} />
           </div>
         </div>
