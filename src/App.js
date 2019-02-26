@@ -52,9 +52,13 @@ Check out this resource [Markup Cheet Sheet](https://github.com/adam-p/markdown-
 
 ### Let's talk about some general styling in markup!
 
-**Bold** - can be done by adding 2 asterisks on each side of the word or words you want bold \`** **\`
+**Bold** - can be done by adding 2 asterisks on each side of the word or words you want bold \`**Insert Text Here **\`
 
-**Images** - can be inserted using the markdown inline style, don't forget the alt text! ![Markdown Logo](https://cdn0.iconfinder.com/data/icons/octicons/1024/markdown-512.png)
+**Images** - can be inserted using some simple markdown, don't forget the alt text!
+\`\`\`
+![Markdown Logo](https://cdn0.iconfinder.com/data/icons/octicons/1024/markdown-512.png)
+\`\`\`
+![Markdown Logo](https://cdn0.iconfinder.com/data/icons/octicons/1024/markdown-512.png)
 
 Next let's talk about **lists**. super easy to implement! You can number, you can create unordered lists. Whatever kind of list you want, you can do!
 
@@ -70,11 +74,11 @@ Next let's talk about **lists**. super easy to implement! You can number, you ca
 *   This is the first list item.
 *   Here's the second list item.
 
-    > A blockquote would look great below the second list item.
+    > This is a block quote that can be added under any of the items.
 
 *   And here's the third list item.
 
-Maybe you want to show a some **inline code**. You can do that by using \`<h3>Back Ticks</h3>\`
+Maybe you want to show a some **inline code**. You can do that by using \`<h3>\`\`Back Ticks\`\`</h3>\`
 
 Or maybe you want to show an entire **code block**:
 
