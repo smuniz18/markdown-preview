@@ -53,10 +53,22 @@ code {
   background-color: #fff;
 }
 
-.title {
+h1.title {
   border: 1px solid black;
-  padding: 2%;
+  padding: 13px;
   margin-bottom: 0px;
   background-color: #fff;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1100px) {
+  textarea {
+    height: 40vh;
+  }
+
+  .col-sm-5,
+  .col-sm-7 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }

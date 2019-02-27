@@ -1,6 +1,8 @@
 import React from "react";
 import Preview from "./components/Preview";
 import Editor from "./components/Editor";
+import "bootstrap/dist/css/bootstrap.css";
+import { Container, Row, Col } from "react-bootstrap";
 import "./App.css";
 
 class App extends React.Component {
@@ -21,22 +23,22 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-lg">
+      <Container>
+        <Row>
+          <Col sm={5}>
             <h1 className="title">Editor Window</h1>
             <Editor
               enteredText={this.value}
               handleChange={this.handleChange}
               placeholder={placeholder}
             />
-          </div>
-          <div className="col-lg">
+          </Col>
+          <Col sm={7}>
             <h1 className="title">Preview Window</h1>
             <Preview value={this.state.value} />
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
